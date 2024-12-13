@@ -1,0 +1,11 @@
+- name: variable to print
+  hosts: web 
+  vars: 
+    COURSE: "DevOps" 
+    DURATION: "5 hours"
+  tasks: 
+  - name: Print the task level varaible
+    vars: 
+      COURSE: "Ansible" 
+    ansible.builtin.debug:
+      msg: "Hi {{COURSE}} is {{DURATION}}"
