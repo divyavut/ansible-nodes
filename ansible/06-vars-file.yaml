@@ -1,0 +1,9 @@
+- name: variable to print
+  hosts: web 
+  vars_files: 
+  - vars.yaml
+  tasks: 
+    - name: variables from files
+      ansible.builtin.debug:
+        msg: "Hi {{COURSE}} is {{DURATION}}"
+    
