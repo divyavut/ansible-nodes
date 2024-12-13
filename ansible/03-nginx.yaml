@@ -1,9 +1,13 @@
 - name: installnand run nginx
-  hosts: web 
-  become: true
+  hosts: web # target node
+  become: true # root access
   tasks: 
   - name: nginx install
     ansible.builtin.package:
       name: nginx
       state: present 
+  - name: run nginx
+    ansible.builtin.service:
+      name: httpd
+      state: started
   
