@@ -1,0 +1,12 @@
+- name: create expense user if doesnt exit
+  hosts: web 
+  become: true
+  tasks: 
+  - name: check user exits or not
+    ansible.builtin.command: id expense 
+    register: USER  
+    ignore_errors: true
+
+  - name: create user
+    ansible.builtin.command: adduser expense 
+    when:  USER != 0
