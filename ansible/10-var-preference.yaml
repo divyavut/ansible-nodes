@@ -8,6 +8,7 @@
   vars_prompt: 
   - name: "COURSE"
     prompt: "please enter course"
+    private: false # not confidential
   - name: "DURATION"
     prompt: "please  enter duration"
   tasks: 
