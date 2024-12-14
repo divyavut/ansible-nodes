@@ -6,7 +6,10 @@
     ansible.builtin.command: id expense 
     register: USER  
     ignore_errors: true
-
-  - name: create user
-    ansible.builtin.command: adduser expense 
-    when:  USER != 0
+  - name: print user info
+    ansible.builtin.debug:
+      msg: "{{ USER }}"
+    
+  # - name: create user
+  #   ansible.builtin.command: adduser expense 
+  #   when:  USER != 0
