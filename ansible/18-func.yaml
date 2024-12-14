@@ -3,4 +3,9 @@
   tasks:
   - name: use filters
     ansible.builtin.debug:
-      msg: "Hi {{ COURSE | default('Ansible') }}"
+      msg: "Hi {{ COURSE | default('Ansible') }}" 
+  - name: use upper filter
+    vars: 
+      greeting: "hi ramesh"
+    ansible.builtin.debug:
+      msg: "Hi {{ greeting | upper }}" 
