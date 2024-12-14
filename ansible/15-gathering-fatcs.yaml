@@ -1,0 +1,6 @@
+- name: gathering facts
+  hosts: web 
+  tasks:
+  - name: gather facts
+    ansible.builtin.debug:
+      msg: "hi {{ ansible_facts}}"
