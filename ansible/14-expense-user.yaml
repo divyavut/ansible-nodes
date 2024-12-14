@@ -11,5 +11,5 @@
       msg: "{{ USER }}"
     
   - name: create user
-    ansible.builtin.command: adduser expense 
+    ansible.builtin.command: adduser divya 
     when:  USER.rc != 0
