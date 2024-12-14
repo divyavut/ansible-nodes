@@ -21,9 +21,10 @@
         duration: 10
     ansible.builtin.debug:
       msg: "{{ course | dict2items }}"  
-  - name: dict/map to list
+  - name: list to map
     vars: 
       course:
       - { name: 'ansible', duration: 5}
+      - { name: 'python', duration: 4}
     ansible.builtin.debug:
-      msg: "{{ course | dict2items }}"  
+      msg: "{{ course | items2dict }}"  
