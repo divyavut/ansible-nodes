@@ -2,8 +2,8 @@
   hosts: web 
   vars: 
     COURSE: "Ansible from play" 
-  vars_files: 
-  - vars.yaml 
+  # vars_files: 
+  # - vars.yaml 
   vars_prompt: 
   - name: COURSE
     prompt: please enter course
