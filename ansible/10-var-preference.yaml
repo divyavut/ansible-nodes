@@ -13,8 +13,8 @@
   #   prompt: please  enter duration
   tasks: 
   - name: Print the task level varaible
-    vars: 
-      COURSE: "DevOps from task" 
-      DURATION: "6 hours"
+    # vars: 
+    #   COURSE: "DevOps from task" 
+    #   DURATION: "6 hours"
     ansible.builtin.debug:
       msg: "Hi {{COURSE}} is {{DURATION}}"
