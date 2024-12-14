@@ -3,8 +3,8 @@
   vars: 
     COURSE: "DevOps from play" 
     DURATION: "5 hours" 
-  vars_files: 
-  - vars.yaml 
+  # vars_files: 
+  # - vars.yaml 
   # vars_prompt: 
   # - name: COURSE
   #   prompt: please enter course
