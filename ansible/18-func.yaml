@@ -14,3 +14,10 @@
       number: [3, 4, 5 , 3, 6]
     ansible.builtin.debug:
       msg: "{{ number | unique }}" 
+  - name: dict to list
+    vars: 
+      course:
+        name: 'ansible'
+        duration: 10
+    ansible.builtin.debug:
+      msg: "{{ course | dict2items }}"  
