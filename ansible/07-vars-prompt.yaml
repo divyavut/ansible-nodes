@@ -5,7 +5,7 @@
     description: "please enter course"
   - name: "DURATION"
     description: "please  enter duration"
-   tasks: 
+  tasks: 
    - name: variables from prompt
      ansible.builtin.debug:
        msg: "Hi {{COURSE}} is {{DURATION}}"
