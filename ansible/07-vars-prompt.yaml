@@ -2,9 +2,9 @@
   hosts: web 
   vars_prompt: 
   - name: "COURSE"
-    description: "please enter course"
+    prompt: "please enter course"
   - name: "DURATION"
-    description: "please  enter duration"
+    prompt: "please  enter duration"
   tasks: 
    - name: variables from prompt
      ansible.builtin.debug:
