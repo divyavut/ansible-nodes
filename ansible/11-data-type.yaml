@@ -1,0 +1,20 @@
+- name: devops course information
+  hosts: local
+  vars: 
+    course: "devops with aws" 
+    duration: 120
+    topics: 
+    - linux
+    - shellscipt
+    - ansible
+    - terraform
+    live: true
+    tools: 
+      ci: jenkins
+      cd: kubernetes
+      monitoring: prometheus
+  tasks: 
+  - name: variables from files
+    ansible.builtin.debug:
+      msg: "Hi {{course}} is {{duration}} and {{live}} and tools: {{tools} and topics {{topics}}"   
+  
