@@ -10,6 +10,6 @@
     ansible.builtin.debug:
       msg: "{{ USER }}"
     
-  # - name: create user
-  #   ansible.builtin.command: adduser expense 
-  #   when:  USER != 0
+  - name: create user
+    ansible.builtin.command: adduser expense 
+    when:  USER.rc != 0
