@@ -1,0 +1,11 @@
+- name: check expense user exit or not
+  hosts: web 
+  become: yes
+  tasks: 
+  - name: check user exit 
+    ansible.builtin.command: id expense
+    register: USER 
+  - name: user information
+    ansible.builtin.debug: 
+      msg: "Hi {{ USER }}"
+  
