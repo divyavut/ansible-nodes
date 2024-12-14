@@ -4,9 +4,9 @@
     COURSE: "Ansible from play" 
   # vars_files: 
   # - vars.yaml 
-  vars_prompt: 
-  - name: COURSE
-    prompt: please enter course
+  # vars_prompt: 
+  # - name: COURSE
+  #   prompt: please enter course
   tasks: 
   - name: Print the task level varaible
     # vars: 
