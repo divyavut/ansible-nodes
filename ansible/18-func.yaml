@@ -8,4 +8,9 @@
     vars: 
       greeting: "hi ramesh"
     ansible.builtin.debug:
-      msg: "Hi {{ greeting | upper }}" 
+      msg: "{{ greeting | upper }}" 
+  - name: use unique filter
+    vars: 
+      number: [3, 4, 5 , 3, 6]
+    ansible.builtin.debug:
+      msg: "{{ number | unique }}" 
