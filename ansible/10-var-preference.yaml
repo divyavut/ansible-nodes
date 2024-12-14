@@ -1,20 +1,15 @@
 - name: variable to print
   hosts: web 
   vars: 
-    COURSE: "DevOps from play" 
-    DURATION: "5 hours" 
-  # vars_files: 
-  # - vars.yaml 
-  # vars_prompt: 
-  # - name: COURSE
-  #   prompt: please enter course
-  #   private: false # not confidential
-  # - name: DURATION
-  #   prompt: please  enter duration
+    COURSE: "Ansible from play" 
+  vars_files: 
+  - vars.yaml 
+  vars_prompt: 
+  - name: COURSE
+    prompt: please enter course
   tasks: 
   - name: Print the task level varaible
-    # vars: 
-    #   COURSE: "DevOps from task" 
-    #   DURATION: "6 hours"
+    vars: 
+      COURSE: "Ansible from task" 
     ansible.builtin.debug:
-      msg: "Hi {{COURSE}} is {{DURATION}}"
+      msg: "Hi {{COURSE}}"
