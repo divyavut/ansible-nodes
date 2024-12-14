@@ -1,4 +1,4 @@
-- name: installnand run nginx
+- name: install and run nginx
   hosts: web # target node
   become: true # root access
   tasks: 
