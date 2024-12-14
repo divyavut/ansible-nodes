@@ -16,5 +16,5 @@
   tasks: 
   - name: variables from files
     ansible.builtin.debug:
-      msg: "Hi {{course}}, is {{duration}}, and {{live}}, and tools: {{tools} ,and topics: {{topics}}"   
+      msg: "Hi {{course}}, is {{duration}}, and {{live}}, and tools: {{tools}} ,and topics: {{topics}}"   
   
