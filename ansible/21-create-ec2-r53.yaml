@@ -46,4 +46,4 @@
       wait: true
       overwrite: true
     loop: "{{ instances_info.results }}"
-    when: "{{ item.item }}"" == "frontend"
+    when: "{{ item.item }}" == "frontend"
