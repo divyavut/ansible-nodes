@@ -1,7 +1,7 @@
 - name: variable to print
   hosts: web 
-  vars: 
-    COURSE: "Ansible from play" 
+  # vars: 
+  #   COURSE: "Ansible from play" 
   vars_files: 
   - vars.yaml 
   vars_prompt: 
