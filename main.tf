@@ -18,6 +18,7 @@ module "control_node" {
         delete_on_termination = true # automatically delete the volumes when the instance is terminated
     }
   ]
+  spot_price = "auto"
   tags = {
     Name = var.master_name
   }
@@ -41,6 +42,7 @@ module "managed_node" {
         delete_on_termination = true # automatically delete the volumes when the instance is terminated
     }
   ]
+  spot_price = "auto"
   tags = {
     Name = var.agent_name
   }
