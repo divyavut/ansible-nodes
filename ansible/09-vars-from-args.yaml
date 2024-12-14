@@ -1,0 +1,7 @@
+- name: name of the play
+  hosts: web 
+  tasks: 
+  - name: variables from args 
+    ansible.builtin.debug:
+        msg: "Hi {{COURSE}} is {{DURATION}}"
+    
