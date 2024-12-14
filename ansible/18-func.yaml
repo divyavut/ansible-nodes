@@ -30,6 +30,6 @@
       msg: "{{ course | items2dict }}"  
   - name: list to map
     vars: 
-      my_ip: "192.10.6.0"
+      my_ip: "392.10.6.0"
     ansible.builtin.debug:
       msg: "{{ my_ip | ansible.utils.ipv4 }}" 
