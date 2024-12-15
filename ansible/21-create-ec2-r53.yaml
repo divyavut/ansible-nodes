@@ -11,6 +11,12 @@
     - mysql
     zone_name: dev.divyavutakanti.com
   tasks: 
+  - name: Install python library
+    ansible.builtin.pip:
+      name:
+      - boto3
+      - botocore
+      executable: pip3.9
   - name: create instance
     amazon.aws.ec2_instance:
       name: "{{ item }}"
