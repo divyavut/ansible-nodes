@@ -1,11 +1,11 @@
 variable "master_name" {
   type = string
-  default = "managed_node"
+  default = "Control_node"
 }
 
 variable "agent_name" {
   type = string
-  default = "control_node"
+  default = "managed_node"
 }
 
 variable "zone_name" {
