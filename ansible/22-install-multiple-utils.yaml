@@ -1,6 +1,7 @@
 - name: install multiple utills
   hosts: web 
-  remote_user: root
+  # remote_user: root
+  become: yes
   vars: 
     install_utills: 
     - mysql
